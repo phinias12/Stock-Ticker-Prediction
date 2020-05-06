@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Linking html file to css-->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='style.css')}}">
+
+    <title>Ticker Prediction</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <h1> Stock Prediction </h1>
+        <form action='/plot' method="POST">
+            <div class="form-group">
+                <h5> Ticker: </h5>
+                <input type="text" name="ticker" class="form-control"-control" placeholder="FB = Facebook, AAPl = Apple..." required>
+            </div>
+            <div class="form-group">
+                <h5> Interval: </h5>
+                <input type="text" name="interval" class="form-control"-control" placeholder="Day, Week or Month" required>
+            </div>
+            <div class="form-group"> 
+                <h5> Iterations: </h5>
+                <input type="number" name="iterations" min="1" max="3000" step="1" class="form-control"-control" placeholder="Range (1-3000)" required>
+            </div>
+            <div class="form-group"> 
+                <h5> Tolerance: </h5>
+                <input type="number" name="tolerance" min="0.0005" max="0.8" step="0.0001" class="form-control"-control" placeholder="Range (0.0005-0.8)" required>
+            </div>
+            <div class="form-group"> 
+                <h5> Layers: </h5>
+                <input type="number" name="layers" min="1" max="500" step="1" class="form-control"-control" placeholder="Range (1-500)" required>
+            </div>
+            <button class="btn btn-primary" type="submit">submit </button>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

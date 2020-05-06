@@ -1,0 +1,25 @@
+body {
+  background: lightgoldenrodyellow;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+div.btn-group{
+}
+
+div.input-group{
+  padding: 20px; 
+  width: 400px;
+  overflow: auto;
+}
+
+div.center{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
