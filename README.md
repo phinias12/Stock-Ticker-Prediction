@@ -19,8 +19,7 @@ I worked on the model prediction algorithm using Tensorflow.
 1. First, make sure you have Anaconda installed on your machine and make sure you add Anaconda to your operating systems path. If you need assistance on that, [this article](https://www.geeksforgeeks.org/how-to-setup-anaconda-path-to-environment-variable/) is a great resource on how to run Anaconda and how to use it's environments.
 2. Second, make sure you have the project cloned on your machine and you create an anaconda environment for this project. Then, we install the required modules for the project.
 ```
-conda create -n stock-prediction python=3.7.3
-conda activate stock-prediction
+conda activate base
 pip install -r requirements.txt
 ```
 3. Run app.py and go to the URL the program provides. It should be http://127.0.0.1:5000/.
